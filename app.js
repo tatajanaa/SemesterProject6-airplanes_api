@@ -12,13 +12,14 @@ let flightsRouter = require('./routes/flights');
 let planesRouter = require('./routes/planes');
 let weatherRouter = require('./routes/weather');
 
+
 let config =
     {
       host: "sep6dbs.mysql.database.azure.com",
       user: "sep6@sep6dbs",
       password: "SepProjectNewPassword!",
       database: 'sep6dbs',
-      ssl: true
+      ssl: false
     };
 
 const app = express();
