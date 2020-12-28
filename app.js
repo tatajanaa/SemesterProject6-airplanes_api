@@ -16,7 +16,7 @@ let config =
     {
       host: "sep6dbs.mysql.database.azure.com",
       user: "sep6@sep6dbs",
-      password: "SeSepProjectNewPassword!",
+      password: "SepProjectNewPassword!",
       database: 'sep6dbs',
       ssl: true
     };
