@@ -26,7 +26,7 @@ const app = express();
 
 app.use(cors())
 app.use(myConnection(mysql, config, 'single'));
-
+console.log('connected')
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'jade');
