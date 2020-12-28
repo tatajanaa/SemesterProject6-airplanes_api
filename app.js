@@ -19,7 +19,7 @@ let config =
       user: "sep6@sep6dbs",
       password: "SepProjectNewPassword!",
       database: 'sep6dbs',
-      ssl: false
+      ssl: true
     };
 
 const app = express();
