@@ -14,10 +14,10 @@ let weatherRouter = require('./routes/weather');
 
 let config =
     {
-      host: "sep6db.mysql.database.azure.com",
-      user: "sep6@sep6db",
-      password: "Sepsix1234",
-      database: 'united_airplanes_db',
+      host: "sep6dbs.mysql.database.azure.com",
+      user: "sep6@sep6dbs",
+      password: "SeSepProjectNewPassword!",
+      database: 'sep6dbs',
       ssl: true
     };
 
