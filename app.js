@@ -7,9 +7,6 @@ const cors = require('cors');
 const mysql = require('mysql');
 const myConnection = require("express-myconnection");
 
-const appInsights = require('applicationinsights');
-appInsights.setup('<instrumentation_key>').start();
-
 let indexRouter = require('./routes/index');
 let flightsRouter = require('./routes/flights');
 let planesRouter = require('./routes/planes');
