@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentScriptType="application/ecmascript" contentStyleType="text/css" height="67px" preserveAspectRatio="none" style="width:344px;height:67px;" version="1.1" viewBox="0 0 344 67" width="344px" zoomAndPan="magnify"><defs/><g><ellipse cx="25.9706" cy="43.242" fill="#F8F8F8" rx="19.9706" ry="13.242" style="stroke: #383838; stroke-width: 0.5;"/><text fill="#000000" font-family="Tahoma, sans-serif" font-size="12" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="24" x="13.9706" y="46.9842">app</text><ellipse cx="306.2487" cy="43.242" fill="#F8F8F8" rx="27.7487" ry="13.242" style="stroke: #383838; stroke-width: 0.5;"/><text fill="#000000" font-family="Tahoma, sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="35" x="288.7487" y="46.9842">flights</text><ellipse cx="236.8701" cy="43.242" fill="#F8F8F8" rx="29.8701" ry="13.242" style="stroke: #383838; stroke-width: 0.5;"/><text fill="#000000" font-family="Tahoma, sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="38" x="217.8701" y="46.9842">planes</text><ellipse cx="167.163" cy="43.242" fill="#F8F8F8" rx="29.163" ry="13.242" style="stroke: #383838; stroke-width: 0.5;"/><text fill="#000000" font-family="Tahoma, sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="37" x="148.663" y="46.9842">routes</text><ellipse cx="91.8198" cy="43.242" fill="#F8F8F8" rx="34.8198" ry="13.242" style="stroke: #383838; stroke-width: 0.5;"/><text fill="#000000" font-family="Tahoma, sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="45" x="69.3198" y="46.9842">weather</text><!--MD5=[3bec2745868b702a46488e317fed63a6]
+link <b>app</b> to flights--><path d="M36.5665,31.8875 C42.2233,26.7501 49.6362,21.1981 57.5,18.5 C101.6407,3.355 222.694,5.4526 267.5,18.5 C274.793,20.6237 282.023,24.593 288.215,28.7277 " fill="none" id="&lt;b&gt;app&lt;/b&gt;-&gt;flights" style="stroke: #000000; stroke-width: 1.0;"/><polygon fill="#000000" points="292.324,31.596,287.235,23.1638,288.2245,28.7334,282.6549,29.7229,292.324,31.596" style="stroke: #000000; stroke-width: 1.0;"/><!--MD5=[1ea8a25477405cb7e37bf7f1e972774c]
+link <b>app</b> to planes--><path d="M36.5665,31.8875 C42.2233,26.7501 49.6362,21.1981 57.5,18.5 C86.717,8.4754 166.747,10.2008 196.5,18.5 C204.089,20.6168 211.674,24.5845 218.194,28.7197 " fill="none" id="&lt;b&gt;app&lt;/b&gt;-&gt;planes" style="stroke: #000000; stroke-width: 1.0;"/><polygon fill="#000000" points="222.524,31.5886,217.2302,23.2834,218.3557,28.8272,212.812,29.9527,222.524,31.5886" style="stroke: #000000; stroke-width: 1.0;"/><!--MD5=[36a52ea6ee24926a3f72709daef9af11]
+link <b>app</b> to routes--><path d="M36.5665,31.8875 C42.2233,26.7501 49.6362,21.1981 57.5,18.5 C86.9272,8.4033 97.5799,9.9744 127.5,18.5 C134.941,20.6202 142.348,24.5886 148.704,28.7236 " fill="none" id="&lt;b&gt;app&lt;/b&gt;-&gt;routes" style="stroke: #000000; stroke-width: 1.0;"/><polygon fill="#000000" points="152.924,31.5922,147.7304,23.224,148.7892,28.7809,143.2323,29.8397,152.924,31.5922" style="stroke: #000000; stroke-width: 1.0;"/><!--MD5=[63ed9260762ed21a73a75839c49b417d]
+link <b>app</b> to weather--><path d="M46.1094,43 C48.014,43 49.9187,43 51.8233,43 " fill="none" id="&lt;b&gt;app&lt;/b&gt;-&gt;weather" style="stroke: #000000; stroke-width: 1.0;"/><polygon fill="#000000" points="56.865,43,47.865,39,51.865,43,47.865,47,56.865,43" style="stroke: #000000; stroke-width: 1.0;"/><script type="text/plantuml"><![CDATA[MD5=[1f4ed9bca06f5a1ca869c412598ec9ec]
+@startuml
+
+scale max 1920 width
+top to bottom direction
+
+skinparam nodesep 11
+skinparam ranksep 23
+skinparam monochrome true
+skinparam shadowing false
+skinparam defaultFontName Tahoma
+skinparam defaultFontSize 12
+skinparam roundCorner 6
+skinparam dpi 150
+skinparam arrowColor black
+skinparam arrowThickness 0.5
+skinparam packageTitleAlignment left
+
+skinparam usecase {
+  borderThickness 0.5
+}
+
+skinparam rectangle {
+  borderThickness 0.5
+}
+
+skinparam component {
+  borderThickness 1
+}
+
+
+(<b>app</b>)
+(flights)
+(planes)
+(routes)
+(weather)
+
+
+(<b>app</b>) -[thickness=1]> (flights)
+(<b>app</b>) -[thickness=1]> (planes)
+(<b>app</b>) -[thickness=1]> (routes)
+(<b>app</b>) -[thickness=1]> (weather)
+
+@enduml
+
+
+' View and edit on https://arkit.pro
+]]></script></g></svg>
